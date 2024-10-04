@@ -1,0 +1,414 @@
+/* importamos las fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Londrina+Solid:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background-color: #020202;
+}
+.inicio{
+    height: 100%;
+}
+.inicio .fondo-cielo{
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(rgba(255,255,255,0) 80%, rgba(255,255,255,1)),
+    url(img/fondocielo.webp);
+    background-size: cover;
+    height: 85%;
+    z-index: -10;
+}
+.inicio .fondo-img{
+    background: url(img/fondoinicio.png);
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    top: 0;
+    height: 110%;
+    width: 100%;
+    z-index: 5;
+}
+.inicio .contenido-seccion{
+    max-width: 1200px;
+    margin: auto;
+}
+.inicio .contenido-seccion header{
+    padding: 50px 20px;
+    z-index: 100;
+    position: relative;
+
+}
+.inicio .contenido-seccion header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Londrina Solid';
+}
+.inicio .contenido-seccion header nav a{
+    text-decoration: none;
+    color: #020202;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.inicio .contenido-seccion header nav a i{
+    font-size: 30px;
+}
+.titulo{
+    font-family: 'Londrina Solid';
+    text-align: center;
+    font-size: 6rem;
+    color: #26f0f0;
+    position: relative;
+}
+/* SECCION TOURS */
+.tours{
+    text-align: center;
+    max-width: 1100px;
+    margin: auto;
+    background-color: #020202;
+    margin-top: 100px;
+    z-index: 100;
+}
+h2{
+    color: #26f0f0;
+    font-size: 20px;
+    font-family: 'Londrina Solid';
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.tours > p{
+    color: #f3f3f3;
+    line-height: 35px;
+    font-family: 'Londrina Solid';
+    font-size: 20px;
+}
+.tours .fila{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.tours .fila .col{
+    width: 30%;
+
+}
+.tours .fila i{
+    font-size: 35px;
+    color: #26f0f0;
+    display: inline-block;
+}
+.tours .fila p{
+    color: #f3f3f3;
+    font-size: 18px;
+    font-family: 'Londrina Solid';
+    margin-top: 15px;
+    line-height: 25px;
+}
+/* SECCION INFO */
+.info{
+    position: relative;
+}
+.info img{
+    width: 70%;
+}
+.info .texto{
+    background: rgba(20, 20, 20, 0.7);
+    max-width: 600px;
+    border: 2px solid #26f0f0;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+}
+.info .texto p{
+    margin: 10px 0;
+    color: #eceaea;
+    font-size: 18px;
+    margin-top: 15px;
+    line-height: 25px;
+}
+.info .texto button{
+    background-color: #fff;
+    border: none;
+    border: 2px solid #334755;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: #666;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.carrusel {
+    margin-bottom: 60px; /* Aumenta la separación entre el carrusel y la siguiente sección */
+    display: flex;
+    justify-content: center; /* Centra el carrusel horizontalmente */
+    align-items: center; /* Centra el carrusel verticalmente */
+    width: 100%; /* El carrusel ocupará todo el ancho del contenedor */
+    max-width: 1200px; /* Un máximo de 1200px para evitar que se extienda demasiado */
+    margin: 50px auto; /* Añade un margen superior e inferior */
+    height: 500px; /* Ajusta la altura para que sea más grande */
+}
+
+.carrusel img {
+    width: 150px; /* Cambia el tamaño inicial de las imágenes */
+    height: 100%; /* Mantén la altura completa del contenedor */
+    object-fit: cover; /* Para asegurar que las imágenes mantengan proporciones */
+    opacity: 0.7;
+    transition: width 0.5s ease, opacity 0.5s ease; /* Añade suavidad a la transición */
+    margin: 0 10px; /* Añade espacio entre las imágenes */
+}
+
+.carrusel img:hover {
+    cursor: pointer;
+    width: 400px; /* Expande la imagen al hacer hover */
+    opacity: 1; /* Mayor opacidad al hacer hover */
+    filter: contrast(120%);
+}
+
+/* boton */
+.boton-conocer-mas {
+        text-align: center;
+        margin-top: 40px; /* Mayor espacio entre el botón y el carrusel */
+}
+
+.boton-conocer-mas button {
+    padding: 15px 30px; /* Aumentar el tamaño del botón */
+    background-color: #4a4a4b; /* Color de fondo del botón */
+    font-family: 'Londrina Solid';
+    color: white; /* Color del texto */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor a pointer */
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Efecto suave de transición */
+}
+
+.boton-conocer-mas button:hover {
+    background-color: #26f0f0; /* Cambia el color al pasar el ratón */
+}
+.icon-bar {
+    position: fixed;
+    top: 70%;
+    right: 0%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: #292929;
+    z-index: 9999; /* Incrementa el z-index */
+}
+/* Style the icon bar links */
+
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+/* Style the social media icons with color, if you want */
+
+.icon-bar a:hover {
+    background-color: #26f0f0;
+    border-bottom: #cf8c8c 1px solid;
+}
+/* ******** */
+/* PORFOLIO */
+/* ******** */
+.portfolio{
+    margin-top: 60px; /* Añade separación antes de que inicie la sección de portafolio */
+    position: relative;
+    z-index: 100;
+    color: rgb(245, 245, 245);
+    -webkit-text-stroke: 0.1px rgba(0, 0, 0, 0.541);
+    font-family: 'Londrina Solid';
+    letter-spacing: 4px;    
+    background-color: #0e0d0d;
+}
+.titulo-seccion{
+    font-size: 5rem;
+    width: fit-content;
+    letter-spacing: 8px;
+    color: transparent;
+    -webkit-text-stroke: 2px #26f0f0b9;
+    position: relative;
+    transform: translateX(100px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.portfolio .fila{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.portfolio .fila .col{
+    position: relative;
+    height: fit-content;
+    cursor: pointer;
+    transition: transform .3s;
+    width: 48%; /* Asegura que las columnas se distribuyan uniformemente */
+    margin-bottom: 20px; /* Espacio entre las filas */
+}
+.portfolio .fila  .col .info{
+    position: absolute;
+    top: 50%;
+    left: -60px;
+    width: 100%;
+    transition: left .8s;
+}
+.portfolio .fila .col .info .titulo-proyecto{
+    font-size: 40px;
+}
+.portfolio .fila .col .info .descripcion-proyecto{
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.portfolio .fila .col  .img-proyecto{
+    width: 100%; /* Asegura que las imágenes ocupen todo el ancho del contenedor */
+    height: 300px; /* Ajusta la altura de todas las imágenes para que sean uniformes */
+    object-fit: cover; /* Recorta las imágenes si es necesario sin deformarlas */
+    border-radius: 10px; /* Opcional: añade bordes redondeados */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Añadir una animación suave en hover */
+}
+.portfolio .fila .col:hover{
+    transform: rotateX(10deg) rotateY(15deg) rotateZ(1deg);
+}
+.portfolio .fila .col:hover .info{
+    left: 0;
+}
+.portfolio .fila .col:hover .img-proyecto {
+    transform: scale(1.05); /* Agranda un poco la imagen al hacer hover */
+    opacity: 0.9; /* Cambia la opacidad en hover */
+}
+/* ******** */
+/* TESTIMONIOS */
+/* ******** */
+.testimonios{
+    position: flex;
+    background-image: url(img/fondo_testimonios.jpeg);
+    background-size: cover;
+    height: 50vh;
+   z-index: 100;
+}
+.testimonios .fila{
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+}
+.testimonios .fila .titulo{
+    width: 40%;
+    font-size: 80px;
+    color: #fff;
+}
+.testimonios .fila .titulo h3 {
+    font-size: 60px; /* Reducir el tamaño del texto */
+}
+.testimonios .fila .cliente{
+    width: 20%;  
+}
+
+.testimonios .fila .cliente .contenedor-img{
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+.testimonios .fila .cliente .contenedor-img img{
+    width: 200px; /* Aumentar tamaño de las imágenes */
+    height: 200px; /* Mantener la proporción de aspecto */
+    object-fit: cover; /* Para asegurar que no se distorsionen las imágenes */
+    border-radius: 50%; /* Mantener las imágenes redondas */
+}
+
+.testimonios .fila .cliente .siguiente{
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 50%;
+    border: none;
+    margin: auto;
+    position: relative;
+    font-size: 30px;
+    background-color: #26f0f0;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+.testimonios .fila .cliente .siguiente:hover{
+    background-color: #333;
+    color: #26f0f0;
+}
+.testimonios .fila .opinion{
+    position: relative;
+    width: 40%;
+    font-family: 'Londrina Solid';
+    color: #fff;
+    padding-left: 40px;
+}
+.testimonios .fila .opinion h3{
+    margin-bottom: 15px;
+    font-size: 24px; /* Ajustar tamaño del título del cliente */
+}
+.testimonios .fila .opinion p{
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 35px;
+    font-family: 'Londrina Solid';
+    color: #888888;
+}
+/* Footer */
+
+footer {
+    display: flex;
+    font-family: 'Londrina Solid';
+    background-color: #eeeeee;
+    color: #272727;
+  }
+  
+  .footerLeft {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+  }
+  
+  .fMenuTitle {
+    font-size: 16px;
+  }
+  
+  .fList {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .fListItem {
+    margin-bottom: 10px;
+    color: rgb(88, 88, 88);
+    cursor: pointer;
+  }
+  
+  .footerRight {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .fInput {
+    padding: 5px;
+  }
+  
+  .fButton {
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+  
+ 
+  .copyright{
+    font-weight: 300;
+    font-size: 14px;
+  }
