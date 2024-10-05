@@ -1,5 +1,5 @@
 /* importamos las fuentes */
-@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Londrina+Solid:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -44,7 +44,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    font-family: 'Londrina Solid';
+    font-family: 'Bangers';
 }
 .inicio .contenido-seccion header nav a{
     text-decoration: none;
@@ -56,7 +56,7 @@ body{
     font-size: 30px;
 }
 .titulo{
-    font-family: 'Londrina Solid';
+    font-family: 'Bangers';
     text-align: center;
     font-size: 6rem;
     color: #26f0f0;
@@ -74,14 +74,14 @@ body{
 h2{
     color: #26f0f0;
     font-size: 20px;
-    font-family: 'Londrina Solid';
+    font-family: 'Bangers';
     text-transform: uppercase;
     letter-spacing: 5px;
 }
 .tours > p{
     color: #f3f3f3;
     line-height: 35px;
-    font-family: 'Londrina Solid';
+    font-family: 'Bangers';
     font-size: 20px;
 }
 .tours .fila{
@@ -101,7 +101,7 @@ h2{
 .tours .fila p{
     color: #f3f3f3;
     font-size: 18px;
-    font-family: 'Londrina Solid';
+    font-family: 'Bangers';
     margin-top: 15px;
     line-height: 25px;
 }
@@ -175,7 +175,7 @@ h2{
 .boton-conocer-mas button {
     padding: 15px 30px; /* Aumentar el tamaño del botón */
     background-color: #4a4a4b; /* Color de fondo del botón */
-    font-family: 'Londrina Solid';
+    font-family: 'Bangers';
     color: white; /* Color del texto */
     border: none; /* Sin bordes */
     border-radius: 5px; /* Bordes redondeados */
@@ -221,8 +221,7 @@ h2{
     position: relative;
     z-index: 100;
     color: rgb(245, 245, 245);
-    -webkit-text-stroke: 0.1px rgba(0, 0, 0, 0.541);
-    font-family: 'Londrina Solid';
+    font-family: 'Bangers';
     letter-spacing: 4px;    
     background-color: #0e0d0d;
 }
@@ -230,8 +229,7 @@ h2{
     font-size: 5rem;
     width: fit-content;
     letter-spacing: 8px;
-    color: transparent;
-    -webkit-text-stroke: 2px #26f0f0b9;
+    color: #26f0f0b9;
     position: relative;
     transform: translateX(100px);
     transition: opacity 0.3s ease, transform 0.3s ease;
@@ -343,7 +341,7 @@ h2{
 .testimonios .fila .opinion{
     position: relative;
     width: 40%;
-    font-family: 'Londrina Solid';
+    font-family: 'Bangers';
     color: #fff;
     padding-left: 40px;
 }
@@ -355,14 +353,14 @@ h2{
     font-size: 16px;
     margin-bottom: 15px;
     line-height: 35px;
-    font-family: 'Londrina Solid';
+    font-family: 'Bangers';
     color: #888888;
 }
 /* Footer */
 
 footer {
     display: flex;
-    font-family: 'Londrina Solid';
+    font-family: 'Bangers';
     background-color: #eeeeee;
     color: #272727;
   }
